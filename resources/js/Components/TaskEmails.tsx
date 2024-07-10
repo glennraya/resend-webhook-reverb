@@ -96,7 +96,7 @@ const TaskEmails = ({ users, user }: { users: User[]; user: User }) => {
                                             </Button>
                                         </CustomTooltip>
                                         <Badge
-                                            className={`text-xs ${user.task_checked_at !== null || user.email === updateEmail ? 'bg-green-500 text-white hover:bg-green-500' : 'text-black'}`}
+                                            className={`text-xs dark:text-white ${user.task_checked_at !== null || user.email === updateEmail ? 'bg-green-500 text-white hover:bg-green-500' : 'text-black'}`}
                                             variant="secondary"
                                         >
                                             {updateEmail === user.email ||
