@@ -59,7 +59,7 @@ const TaskEmails = ({ users, user }: { users: User[]; user: User }) => {
                     Sent project task emails to developers.
                 </CardDescription>
             </CardHeader>
-            <CardContent className="relative overflow-y-scroll scroll-smooth">
+            <CardContent className="relative">
                 <Table className="mb-4 h-full">
                     <TableHeader>
                         <TableRow>
@@ -80,7 +80,7 @@ const TaskEmails = ({ users, user }: { users: User[]; user: User }) => {
                                         {user.email}
                                     </div>
                                 </TableCell>
-                                <TableCell className="hidden text-right sm:table-cell">
+                                <TableCell className="text-right sm:table-cell">
                                     <div className="flex items-center justify-end">
                                         <CustomTooltip label="Send task email">
                                             <Button
@@ -110,7 +110,7 @@ const TaskEmails = ({ users, user }: { users: User[]; user: User }) => {
                         ))}
                     </TableBody>
                 </Table>
-                <div className="flex justify-end gap-2">
+                <div className="flex justify-center gap-2 xl:justify-end">
                     <Button variant="outline" size="sm" type="button">
                         Prev
                     </Button>

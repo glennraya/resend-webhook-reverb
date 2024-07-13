@@ -9,7 +9,7 @@ import { PiCurrencyCircleDollarDuotone } from 'react-icons/pi'
 
 const MonthlyRevenue = () => {
     return (
-        <Card className="transition duration-300 ease-linear hover:bg-gray-50 dark:hover:bg-gray-800">
+        <Card className="col-span-2 transition duration-300 ease-linear hover:bg-gray-50 xl:col-span-1 dark:hover:bg-gray-800">
             <CardHeader>
                 <CardTitle className="flex items-center justify-between text-2xl font-bold">
                     <span>$154,561.64</span>
